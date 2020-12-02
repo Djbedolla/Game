@@ -14,5 +14,7 @@ namespace Game
         public int Health;
         public int Perception;
         public int Intelligence;
+        public string name;
+        
     }
 }

@@ -16,39 +16,69 @@ namespace Game
         public Character()
         {
             InitializeComponent();
-            
+            this.Str.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Per.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Int.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.St.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Class.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.Ag.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        
-        int th, s, a, p, i;
-        int str, st, intel, ag, per;
-
         private void Character_Load(object sender, EventArgs e)
         {
-            
+
+        }
+        int th, s, a, p, i;
+        int str, st, intel, ag, per;
+        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Char.name = textBox1.Text;
         }
 
+        
+
+        
+
         CharStat Char = new CharStat();
-        
-        
+        private void Per_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            p = Convert.ToInt32(Per.Text);
+            Char.Perception = p + per;
+            characterperception.Text = Convert.ToString(Char.Perception);
+            
 
+        }
+        private void Int_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            i = Convert.ToInt32(Int.Text);
+            Char.Intelligence = i + intel;
+            characterintelligence.Text = Convert.ToString(Char.Intelligence);
+        }
+        private void Ag_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            a = Convert.ToInt32(Ag.Text);
+            Char.Agility = a+ag;
+            characteragility.Text = Convert.ToString(Char.Agility);
 
-
+        }
         private void St_SelectedIndexChanged(object sender, EventArgs e)
         {
             s = Convert.ToInt32(St.Text);
             Char.Stealth = s + st;
+            characterstealth.Text = Convert.ToString(Char.Stealth);
         }
         private void Str_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             th = Convert.ToInt32(Str.Text);            
             Char.Strength = th + str ;
-            Fstr.Text = Convert.ToString(Char.Strength);
+            characterstrength.Text = Convert.ToString(Char.Strength);
         }   
         private void Class_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Class.Text == "Ninja")
             {
-
+                
                 pb.Image = Properties.Resources.ninja;
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 
@@ -58,15 +88,36 @@ namespace Game
                 HpBn.Text = "+0";
                 PerBn.Text = "+1";
                 IntBn.Text = "+1";
+                
                 str =Convert.ToInt32(StrBn.Text);
                 Char.Strength = th + str;
-                Fstr.Text = Convert.ToString(Char.Strength);
+                characterstrength.Text = Convert.ToString(Char.Strength);
                 
+                st = Convert.ToInt32(StBn.Text);
+                Char.Stealth = s + st;
+                characterstealth.Text = Convert.ToString(Char.Stealth);
+
+                ag = Convert.ToInt32(AgBn.Text);
+                Char.Agility = a + ag;
+                characteragility.Text = Convert.ToString(Char.Agility);
+
+                intel = Convert.ToInt32(IntBn.Text);
+                Char.Intelligence = i + intel;
+                characterintelligence.Text = Convert.ToString(Char.Intelligence);
+                
+                per = Convert.ToInt32(PerBn.Text);
+                Char.Perception = p + per;
+                characterperception.Text = Convert.ToString(Char.Perception);
+
+                Char.Health = 10 + Convert.ToInt32(HpBn.Text);
+                characterhealth.Text = Convert.ToString(Char.Health);
+
 
 
             }
             if (Class.Text == "Samurai")
             {
+                
                 pb.Image = Properties.Resources.samurai;
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 StrBn.Text = "+3";
@@ -75,9 +126,29 @@ namespace Game
                 PerBn.Text = "+2";
                 IntBn.Text = "+2";
                 AgBn.Text = "-2";
+                
                 str = Convert.ToInt32(StrBn.Text);
                 Char.Strength = th + str;
-                Fstr.Text = Convert.ToString(Char.Strength);
+                characterstrength.Text = Convert.ToString(Char.Strength);
+                
+                st = Convert.ToInt32(StBn.Text);
+                Char.Stealth = s + st;
+                characterstealth.Text = Convert.ToString(Char.Stealth);
+
+                ag = Convert.ToInt32(AgBn.Text);
+                Char.Agility = a + ag;
+                characteragility.Text = Convert.ToString(Char.Agility);
+                
+                intel = Convert.ToInt32(IntBn.Text);
+                Char.Intelligence = i + intel;
+                characterintelligence.Text = Convert.ToString(Char.Intelligence);
+
+                per = Convert.ToInt32(PerBn.Text);
+                Char.Perception = p + per;
+                characterperception.Text = Convert.ToString(Char.Perception);
+
+                Char.Health = 10 + Convert.ToInt32(HpBn.Text);
+                characterhealth.Text = Convert.ToString(Char.Health);
 
 
 
@@ -87,6 +158,7 @@ namespace Game
             }
             if (Class.Text == "Ronin")
             {
+                
                 pb.Image = Properties.Resources.ronin;
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
                 StrBn.Text = "+2";
@@ -98,12 +170,27 @@ namespace Game
 
                 str = Convert.ToInt32(StrBn.Text);
                 Char.Strength = th + str;
-                Fstr.Text = Convert.ToString(Char.Strength);
-                Char.Agility = Char.Agility + 2;
-                Char.Stealth = Char.Stealth + 1;
-                Char.Health = Char.Health + 1;
-                Char.Perception = Char.Perception - 1;
-                Char.Intelligence = Char.Intelligence + 1;
+                characterstrength.Text = Convert.ToString(Char.Strength);
+                
+                st = Convert.ToInt32(StBn.Text);
+                Char.Stealth = s + st;
+                characterstealth.Text = Convert.ToString(Char.Stealth);
+
+                ag = Convert.ToInt32(AgBn.Text);
+                Char.Agility = a + ag;
+                characteragility.Text = Convert.ToString(Char.Agility);
+
+                intel = Convert.ToInt32(IntBn.Text);
+                Char.Intelligence = i + intel;
+                characterintelligence.Text = Convert.ToString(Char.Intelligence);
+
+                per = Convert.ToInt32(PerBn.Text);
+                Char.Perception = p + per;
+                characterperception.Text = Convert.ToString(Char.Perception);
+                
+                Char.Health = 10 + Convert.ToInt32(HpBn.Text);
+                characterhealth.Text = Convert.ToString(Char.Health);
+
 
             }
             if (Class.Text == "Monk")
@@ -120,12 +207,27 @@ namespace Game
 
                 str = Convert.ToInt32(StrBn.Text);
                 Char.Strength = th + str;
-                Fstr.Text = Convert.ToString(Char.Strength);
-                Char.Agility = Char.Agility + 3;
-                Char.Stealth = Char.Stealth + 2;
-                Char.Health = Char.Health + 0;
-                Char.Perception = Char.Perception + 1;
-                Char.Intelligence = Char.Intelligence + 3;
+                characterstrength.Text = Convert.ToString(Char.Strength);
+
+                st = Convert.ToInt32(StBn.Text);
+                Char.Stealth = s + st;
+                characterstealth.Text = Convert.ToString(Char.Stealth);
+
+                ag = Convert.ToInt32(AgBn.Text);
+                Char.Agility = a + ag;
+                characteragility.Text = Convert.ToString(Char.Agility);
+
+                intel = Convert.ToInt32(IntBn.Text);
+                Char.Intelligence = i + intel;
+                characterintelligence.Text = Convert.ToString(Char.Intelligence);
+
+                per = Convert.ToInt32(PerBn.Text);
+                Char.Perception = p + per;
+                characterperception.Text = Convert.ToString(Char.Perception);
+
+                Char.Health = 10 + Convert.ToInt32(HpBn.Text);
+                characterhealth.Text = Convert.ToString(Char.Health);
+
             }
             
             
