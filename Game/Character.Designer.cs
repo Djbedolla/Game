@@ -85,11 +85,7 @@
             "2",
             "3",
             "4",
-            "5",
-            "",
-            "",
-            "",
-            ""});
+            "5"});
             this.Str.Location = new System.Drawing.Point(121, 226);
             this.Str.Name = "Str";
             this.Str.Size = new System.Drawing.Size(121, 21);
@@ -286,6 +282,7 @@
             this.Create.TabIndex = 22;
             this.Create.Text = "Finish";
             this.Create.UseVisualStyleBackColor = false;
+            this.Create.Click += new System.EventHandler(this.Create_Click);
             // 
             // label9
             // 
@@ -421,7 +418,7 @@
             this.characterstrength.Name = "characterstrength";
             this.characterstrength.Size = new System.Drawing.Size(21, 22);
             this.characterstrength.TabIndex = 40;
-            this.characterstrength.Text = "1";
+            this.characterstrength.Text = "0";
             // 
             // characterhealth
             // 
@@ -443,7 +440,7 @@
             this.characterperception.Name = "characterperception";
             this.characterperception.Size = new System.Drawing.Size(21, 22);
             this.characterperception.TabIndex = 42;
-            this.characterperception.Text = "1";
+            this.characterperception.Text = "0";
             // 
             // characterstealth
             // 
@@ -454,7 +451,7 @@
             this.characterstealth.Name = "characterstealth";
             this.characterstealth.Size = new System.Drawing.Size(21, 22);
             this.characterstealth.TabIndex = 43;
-            this.characterstealth.Text = "1";
+            this.characterstealth.Text = "0";
             // 
             // characterintelligence
             // 
@@ -465,7 +462,7 @@
             this.characterintelligence.Name = "characterintelligence";
             this.characterintelligence.Size = new System.Drawing.Size(21, 22);
             this.characterintelligence.TabIndex = 44;
-            this.characterintelligence.Text = "1";
+            this.characterintelligence.Text = "0";
             // 
             // characteragility
             // 
@@ -476,7 +473,7 @@
             this.characteragility.Name = "characteragility";
             this.characteragility.Size = new System.Drawing.Size(21, 22);
             this.characteragility.TabIndex = 45;
-            this.characteragility.Text = "1";
+            this.characteragility.Text = "0";
             // 
             // textBox1
             // 

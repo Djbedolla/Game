@@ -29,7 +29,21 @@ namespace Game
         }
         int th, s, a, p, i;
         int str, st, intel, ag, per;
-        
+
+        private void Create_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0&&Class.Text.Length>0&&Str.Text.Length>0&&St.Text.Length>0&&Int.Text.Length>0&&Ag.Text.Length>0&&Per.Text.Length>0)
+            {
+                Room1 n = new Room1();
+                n.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please finish selecting a Name, Class, and Stats to continue.");
+            }
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Char.name = textBox1.Text;
@@ -45,7 +59,48 @@ namespace Game
             p = Convert.ToInt32(Per.Text);
             Char.Perception = p + per;
             characterperception.Text = Convert.ToString(Char.Perception);
-            
+
+            Ag.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
+            Int.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
+            St.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
+            Str.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
+
+
+            if (p == 5)
+            {
+                Ag.Items.Remove("5");
+                Int.Items.Remove("5");
+                St.Items.Remove("5");
+                Str.Items.Remove("5");
+            }
+            if (p == 4)
+            {
+                Ag.Items.Remove("4");
+                Int.Items.Remove("4");
+                St.Items.Remove("4");
+                Str.Items.Remove("4");
+            }
+            if (p == 3)
+            {
+                Ag.Items.Remove("3");
+                Int.Items.Remove("3");
+                St.Items.Remove("3");
+                Str.Items.Remove("3");
+            }
+            if (p == 2)
+            {
+                Ag.Items.Remove("2");
+                Int.Items.Remove("2");
+                St.Items.Remove("2");
+                Str.Items.Remove("2");
+            }
+            if (p == 1)
+            {
+                Ag.Items.Remove("1");
+                Int.Items.Remove("1");
+                St.Items.Remove("1");
+                Str.Items.Remove("1");
+            }
 
         }
         private void Int_SelectedIndexChanged(object sender, EventArgs e)
