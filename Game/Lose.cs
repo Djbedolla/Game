@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace Game
 {
-    public partial class Room1 : Form
+    public partial class Lose : Form
     {
-        public Room1()
+        public Lose()
         {
             InitializeComponent();
         }
 
-        private void Room1_Load(object sender, EventArgs e)
+        private void Lose_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Character n = new Character();
+            n.Show();
+            Hide();
         }
     }
 }

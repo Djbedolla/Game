@@ -536,7 +536,7 @@
             this.Controls.Add(this.Str);
             this.Controls.Add(this.pb);
             this.Name = "Character";
-            this.Load += new System.EventHandler(this.Character_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

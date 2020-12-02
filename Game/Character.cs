@@ -23,10 +23,7 @@ namespace Game
             this.Class.DropDownStyle = ComboBoxStyle.DropDownList;
             this.Ag.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        private void Character_Load(object sender, EventArgs e)
-        {
-
-        }
+        
         int th, s, a, p, i;
         int str, st, intel, ag, per;
 
@@ -62,62 +59,7 @@ namespace Game
 
            
 
-            if (p == 5)
-            {
-                Ag.Items.Clear();
-                Int.Items.Clear();
-                St.Items.Clear();
-                Str.Items.Clear();
-                Ag.Items.AddRange(new string[] { "1", "2", "3", "4" });
-                Int.Items.AddRange(new string[] { "1", "2", "3", "4" });
-                St.Items.AddRange(new string[] { "1", "2", "3", "4" });
-                Str.Items.AddRange(new string[] { "1", "2", "3", "4" });
-                
-            }
-            if (p == 4)
-            {
-                Ag.Items.Clear();
-                Int.Items.Clear();
-                St.Items.Clear();
-                Str.Items.Clear();
-                Ag.Items.AddRange(new string[] { "1", "2", "3", "5" });
-                Int.Items.AddRange(new string[] { "1", "2", "3", "5" });
-                St.Items.AddRange(new string[] { "1", "2", "3", "5" });
-                Str.Items.AddRange(new string[] { "1", "2", "3", "5" });
-            }
-            if (p == 3)
-            {
-                Ag.Items.Clear();
-                Int.Items.Clear();
-                St.Items.Clear();
-                Str.Items.Clear();
-                Ag.Items.AddRange(new string[] { "1", "2", "4", "5" });
-                Int.Items.AddRange(new string[] { "1", "2", "4", "5" });
-                St.Items.AddRange(new string[] { "1", "2", "4", "5" });
-                Str.Items.AddRange(new string[] { "1", "2", "4", "5" });
-            }
-            if (p == 2)
-            {
-                Ag.Items.Clear();
-                Int.Items.Clear();
-                St.Items.Clear();
-                Str.Items.Clear();
-                Ag.Items.AddRange(new string[] { "1", "3", "4", "5" });
-                Int.Items.AddRange(new string[] { "1", "3", "4", "5" });
-                St.Items.AddRange(new string[] { "1", "3", "4", "5" });
-                Str.Items.AddRange(new string[] { "1", "3", "4", "5" });
-            }
-            if (p == 1)
-            {
-                Ag.Items.Clear();
-                Int.Items.Clear();
-                St.Items.Clear();
-                Str.Items.Clear();
-                Ag.Items.AddRange(new string[] {"2", "3", "4", "5" });
-                Int.Items.AddRange(new string[] { "2", "3", "4", "5" });
-                St.Items.AddRange(new string[] { "2", "3", "4", "5" });
-                Str.Items.AddRange(new string[] {  "2", "3", "4","5" });
-            }
+          
 
         }
         private void Int_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,12 +67,21 @@ namespace Game
             i = Convert.ToInt32(Int.Text);
             Char.Intelligence = i + intel;
             characterintelligence.Text = Convert.ToString(Char.Intelligence);
+            Ag.Items.Remove(Int.Text);
+            St.Items.Remove(Int.Text);
+            Str.Items.Remove(Int.Text);
+            Per.Items.Remove(Int.Text);
+
         }
         private void Ag_SelectedIndexChanged(object sender, EventArgs e)
         {
             a = Convert.ToInt32(Ag.Text);
             Char.Agility = a+ag;
             characteragility.Text = Convert.ToString(Char.Agility);
+            Int.Items.Remove(Ag.Text);
+            St.Items.Remove(Ag.Text);
+            Str.Items.Remove(Ag.Text);
+            Per.Items.Remove(Ag.Text);
 
         }
         private void St_SelectedIndexChanged(object sender, EventArgs e)
@@ -138,6 +89,11 @@ namespace Game
             s = Convert.ToInt32(St.Text);
             Char.Stealth = s + st;
             characterstealth.Text = Convert.ToString(Char.Stealth);
+            Int.Items.Remove(St.Text);
+            Ag.Items.Remove(St.Text);
+            Str.Items.Remove(St.Text);
+            Per.Items.Remove(St.Text);
+
         }
         private void Str_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -145,6 +101,10 @@ namespace Game
             th = Convert.ToInt32(Str.Text);            
             Char.Strength = th + str ;
             characterstrength.Text = Convert.ToString(Char.Strength);
+            Int.Items.Remove(Str.Text);
+            Ag.Items.Remove(Str.Text);
+            St.Items.Remove(Str.Text);
+            Per.Items.Remove(Str.Text);
         }   
         private void Class_SelectedIndexChanged(object sender, EventArgs e)
         {
