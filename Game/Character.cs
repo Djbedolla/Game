@@ -40,7 +40,7 @@ namespace Game
             }
             else
             {
-                MessageBox.Show("Please finish selecting a Name, Class, and Stats to continue.");
+                MessageBox.Show("Please finish slecting a Name, Class, and Stats to continue.");
             }
         }
 
@@ -60,46 +60,63 @@ namespace Game
             Char.Perception = p + per;
             characterperception.Text = Convert.ToString(Char.Perception);
 
-            Ag.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
-            Int.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
-            St.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
-            Str.Items.AddRange(new string[] { "5", "4", "3", "2", "1" });
-
+           
 
             if (p == 5)
             {
-                Ag.Items.Remove("5");
-                Int.Items.Remove("5");
-                St.Items.Remove("5");
-                Str.Items.Remove("5");
+                Ag.Items.Clear();
+                Int.Items.Clear();
+                St.Items.Clear();
+                Str.Items.Clear();
+                Ag.Items.AddRange(new string[] { "1", "2", "3", "4" });
+                Int.Items.AddRange(new string[] { "1", "2", "3", "4" });
+                St.Items.AddRange(new string[] { "1", "2", "3", "4" });
+                Str.Items.AddRange(new string[] { "1", "2", "3", "4" });
+                
             }
             if (p == 4)
             {
-                Ag.Items.Remove("4");
-                Int.Items.Remove("4");
-                St.Items.Remove("4");
-                Str.Items.Remove("4");
+                Ag.Items.Clear();
+                Int.Items.Clear();
+                St.Items.Clear();
+                Str.Items.Clear();
+                Ag.Items.AddRange(new string[] { "1", "2", "3", "5" });
+                Int.Items.AddRange(new string[] { "1", "2", "3", "5" });
+                St.Items.AddRange(new string[] { "1", "2", "3", "5" });
+                Str.Items.AddRange(new string[] { "1", "2", "3", "5" });
             }
             if (p == 3)
             {
-                Ag.Items.Remove("3");
-                Int.Items.Remove("3");
-                St.Items.Remove("3");
-                Str.Items.Remove("3");
+                Ag.Items.Clear();
+                Int.Items.Clear();
+                St.Items.Clear();
+                Str.Items.Clear();
+                Ag.Items.AddRange(new string[] { "1", "2", "4", "5" });
+                Int.Items.AddRange(new string[] { "1", "2", "4", "5" });
+                St.Items.AddRange(new string[] { "1", "2", "4", "5" });
+                Str.Items.AddRange(new string[] { "1", "2", "4", "5" });
             }
             if (p == 2)
             {
-                Ag.Items.Remove("2");
-                Int.Items.Remove("2");
-                St.Items.Remove("2");
-                Str.Items.Remove("2");
+                Ag.Items.Clear();
+                Int.Items.Clear();
+                St.Items.Clear();
+                Str.Items.Clear();
+                Ag.Items.AddRange(new string[] { "1", "3", "4", "5" });
+                Int.Items.AddRange(new string[] { "1", "3", "4", "5" });
+                St.Items.AddRange(new string[] { "1", "3", "4", "5" });
+                Str.Items.AddRange(new string[] { "1", "3", "4", "5" });
             }
             if (p == 1)
             {
-                Ag.Items.Remove("1");
-                Int.Items.Remove("1");
-                St.Items.Remove("1");
-                Str.Items.Remove("1");
+                Ag.Items.Clear();
+                Int.Items.Clear();
+                St.Items.Clear();
+                Str.Items.Clear();
+                Ag.Items.AddRange(new string[] {"2", "3", "4", "5" });
+                Int.Items.AddRange(new string[] { "2", "3", "4", "5" });
+                St.Items.AddRange(new string[] { "2", "3", "4", "5" });
+                Str.Items.AddRange(new string[] {  "2", "3", "4","5" });
             }
 
         }

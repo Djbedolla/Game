@@ -87,6 +87,8 @@
             "4",
             "5"});
             this.Str.Location = new System.Drawing.Point(121, 226);
+            this.Str.MaxDropDownItems = 5;
+            this.Str.MaxLength = 5;
             this.Str.Name = "Str";
             this.Str.Size = new System.Drawing.Size(121, 21);
             this.Str.TabIndex = 2;
@@ -118,6 +120,8 @@
             "4",
             "5"});
             this.St.Location = new System.Drawing.Point(121, 306);
+            this.St.MaxDropDownItems = 5;
+            this.St.MaxLength = 5;
             this.St.Name = "St";
             this.St.Size = new System.Drawing.Size(121, 21);
             this.St.TabIndex = 5;
@@ -134,6 +138,8 @@
             "4",
             "5"});
             this.Int.Location = new System.Drawing.Point(122, 279);
+            this.Int.MaxDropDownItems = 5;
+            this.Int.MaxLength = 5;
             this.Int.Name = "Int";
             this.Int.Size = new System.Drawing.Size(121, 21);
             this.Int.TabIndex = 6;
@@ -150,6 +156,8 @@
             "4",
             "5"});
             this.Ag.Location = new System.Drawing.Point(122, 252);
+            this.Ag.MaxDropDownItems = 5;
+            this.Ag.MaxLength = 5;
             this.Ag.Name = "Ag";
             this.Ag.Size = new System.Drawing.Size(121, 21);
             this.Ag.TabIndex = 7;
@@ -317,6 +325,8 @@
             "4",
             "5"});
             this.Per.Location = new System.Drawing.Point(121, 333);
+            this.Per.MaxDropDownItems = 5;
+            this.Per.MaxLength = 5;
             this.Per.Name = "Per";
             this.Per.Size = new System.Drawing.Size(121, 21);
             this.Per.TabIndex = 25;
