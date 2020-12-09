@@ -19,7 +19,7 @@ namespace Game
 
         private void lblstart_Click(object sender, EventArgs e)
         {
-            Room1 n = new Room1(5,3,5,5,5,3,"xd","ninja");
+            Room1 n = new Room1(5,3,5,5,5,4,"xd","ninja");
             n.Show();
             Hide();
         }

@@ -73,6 +73,12 @@
     <Compile Include="Room1.Designer.cs">
       <DependentUpon>Room1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room2.Designer.cs">
+      <DependentUpon>Room2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Character.resx">
       <DependentUpon>Character.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="Room1.resx">
       <DependentUpon>Room1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room2.resx">
+      <DependentUpon>Room2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

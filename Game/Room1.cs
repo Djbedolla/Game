@@ -41,6 +41,7 @@ namespace Game
             Convert.ToInt32(strength);
             Convert.ToInt32(per);
             Convert.ToInt32(intel);
+            Convert.ToInt32(stel);
 
 
 
@@ -77,7 +78,7 @@ namespace Game
 
 
         }
-        
+        bool door=false;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -87,11 +88,13 @@ namespace Game
               button2.Text = "Investigate hole";
               
             }
-            if (button1.Text == "Dodge")
-            {
+           else if (button1.Text == "Dodge")
+           {
                 if (agil >= 4)
                 {
                     des.Text="You manage to dodge the arrow just in time! You Look back at the hole\n is now closed.";
+                    button2.Text = "Break Down Door";
+                    button1.Text = "";
                 }
                 else
                 {
@@ -99,25 +102,12 @@ namespace Game
                     hel = hel - 2;
                     Health.Text = Convert.ToString(hel);
                     Convert.ToInt32(hel);
-                    button1.Text = "Break Down Door";
-                   
-                }
-            }
-            if(button1.Text=="Break Down Door")
-            {
-                if (strength >= 5)
-                {
-                    des.Text = "You manage to break down the door with ease.";
-                }
-                else
-                {
-                    des.Text = "You barely manage to break down the door and you take one damage.";
-                    hel = hel - 1;
-                    Health.Text = Convert.ToString(hel);
-                    Convert.ToInt32(hel);
+                    button2.Text = "Break Down Door";
+                    button1.Text = "";
 
                 }
             }
+            
             
         }
 
@@ -138,15 +128,43 @@ namespace Game
                 }
                 
             }
-            else if(button2.Text=="Pick Lock")
+            if (button2.Text == "Break Down Door")
+            {
+                if (strength >= 5)
+                {
+                    door = true;
+                    des.Text = "You manage to break down the door with ease.";
+                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text, door);
+                    xd.Show();
+                    Hide();
+
+                }
+                else
+                {
+                    door = true;
+                    des.Text = "You barely manage to break down the door and you take one damage.";
+                    hel = hel - 1;
+                    Health.Text = Convert.ToString(hel);
+                    Convert.ToInt32(hel);
+
+
+
+
+                }
+            }
+
+            else if (button2.Text=="Pick Lock")
             {
                 if (intel >= 5)
                 {
                     des.Text = "You have succesfully picke the lock and the door gently creeks open";
+                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text, door);
+                    xd.Show();
+                    Hide();
                 }
                 else
                 {
-                    des.Text = "While you are picking the lock you \nstart hearing a clicking sound. You countinue picking the lock and out of\nthe corner of your eye you see a trap door open and out comes a flying arrow";
+                    des.Text = "While you are picking the lock you start hearing a clicking sound. You\n countinue picking the lock and out of the corner of your eye you see a trap\n door open and out comes a flying arrow";
                     button1.Text = "Dodge";
                     button2.Text = "";
                 }
