@@ -127,6 +127,9 @@
   <data name="ronin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ronin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\room1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="samurai" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\samurai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

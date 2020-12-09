@@ -77,8 +77,8 @@
             // 
             // Str
             // 
-            this.Str.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Str.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Str.BackColor = System.Drawing.Color.White;
+            this.Str.ForeColor = System.Drawing.Color.Black;
             this.Str.FormattingEnabled = true;
             this.Str.Items.AddRange(new object[] {
             "1",
@@ -86,7 +86,7 @@
             "3",
             "4",
             "5"});
-            this.Str.Location = new System.Drawing.Point(121, 226);
+            this.Str.Location = new System.Drawing.Point(121, 225);
             this.Str.MaxDropDownItems = 5;
             this.Str.MaxLength = 5;
             this.Str.Name = "Str";
@@ -111,7 +111,8 @@
             // 
             // St
             // 
-            this.St.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.St.BackColor = System.Drawing.Color.White;
+            this.St.ForeColor = System.Drawing.Color.Black;
             this.St.FormattingEnabled = true;
             this.St.Items.AddRange(new object[] {
             "1",
@@ -129,7 +130,8 @@
             // 
             // Int
             // 
-            this.Int.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Int.BackColor = System.Drawing.Color.White;
+            this.Int.ForeColor = System.Drawing.Color.Black;
             this.Int.FormattingEnabled = true;
             this.Int.Items.AddRange(new object[] {
             "1",
@@ -137,7 +139,7 @@
             "3",
             "4",
             "5"});
-            this.Int.Location = new System.Drawing.Point(122, 279);
+            this.Int.Location = new System.Drawing.Point(121, 279);
             this.Int.MaxDropDownItems = 5;
             this.Int.MaxLength = 5;
             this.Int.Name = "Int";
@@ -147,7 +149,8 @@
             // 
             // Ag
             // 
-            this.Ag.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ag.BackColor = System.Drawing.Color.White;
+            this.Ag.ForeColor = System.Drawing.Color.Black;
             this.Ag.FormattingEnabled = true;
             this.Ag.Items.AddRange(new object[] {
             "1",
@@ -155,7 +158,7 @@
             "3",
             "4",
             "5"});
-            this.Ag.Location = new System.Drawing.Point(122, 252);
+            this.Ag.Location = new System.Drawing.Point(121, 252);
             this.Ag.MaxDropDownItems = 5;
             this.Ag.MaxLength = 5;
             this.Ag.Name = "Ag";
@@ -167,7 +170,7 @@
             // 
             this.lblStr.AutoSize = true;
             this.lblStr.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStr.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStr.ForeColor = System.Drawing.Color.White;
             this.lblStr.Location = new System.Drawing.Point(24, 225);
             this.lblStr.Name = "lblStr";
             this.lblStr.Size = new System.Drawing.Size(85, 22);
@@ -178,7 +181,7 @@
             // 
             this.lblClass.AutoSize = true;
             this.lblClass.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblClass.ForeColor = System.Drawing.Color.White;
             this.lblClass.Location = new System.Drawing.Point(56, 58);
             this.lblClass.Name = "lblClass";
             this.lblClass.Size = new System.Drawing.Size(55, 22);
@@ -189,7 +192,7 @@
             // 
             this.lblHp.AutoSize = true;
             this.lblHp.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblHp.ForeColor = System.Drawing.Color.White;
             this.lblHp.Location = new System.Drawing.Point(45, 357);
             this.lblHp.Name = "lblHp";
             this.lblHp.Size = new System.Drawing.Size(68, 22);
@@ -200,7 +203,7 @@
             // 
             this.lblInt.AutoSize = true;
             this.lblInt.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblInt.ForeColor = System.Drawing.Color.White;
             this.lblInt.Location = new System.Drawing.Point(3, 279);
             this.lblInt.Name = "lblInt";
             this.lblInt.Size = new System.Drawing.Size(113, 22);
@@ -211,7 +214,7 @@
             // 
             this.lblPer.AutoSize = true;
             this.lblPer.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPer.ForeColor = System.Drawing.Color.White;
             this.lblPer.Location = new System.Drawing.Point(5, 333);
             this.lblPer.Name = "lblPer";
             this.lblPer.Size = new System.Drawing.Size(106, 22);
@@ -222,7 +225,7 @@
             // 
             this.lblAg.AutoSize = true;
             this.lblAg.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblAg.ForeColor = System.Drawing.Color.White;
             this.lblAg.Location = new System.Drawing.Point(42, 252);
             this.lblAg.Name = "lblAg";
             this.lblAg.Size = new System.Drawing.Size(67, 22);
@@ -283,7 +286,7 @@
             // 
             this.Create.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Create.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Create.ForeColor = System.Drawing.Color.White;
             this.Create.Location = new System.Drawing.Point(308, 401);
             this.Create.Name = "Create";
             this.Create.Size = new System.Drawing.Size(109, 39);
@@ -296,7 +299,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(56, 29);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 22);
@@ -307,7 +310,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(42, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 22);
@@ -316,7 +319,8 @@
             // 
             // Per
             // 
-            this.Per.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Per.BackColor = System.Drawing.Color.White;
+            this.Per.ForeColor = System.Drawing.Color.Black;
             this.Per.FormattingEnabled = true;
             this.Per.Items.AddRange(new object[] {
             "1",
@@ -346,7 +350,7 @@
             // 
             this.Fstr.AutoSize = true;
             this.Fstr.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fstr.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Fstr.ForeColor = System.Drawing.Color.White;
             this.Fstr.Location = new System.Drawing.Point(304, 329);
             this.Fstr.Name = "Fstr";
             this.Fstr.Size = new System.Drawing.Size(67, 22);
@@ -368,7 +372,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(445, 330);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 22);
@@ -379,7 +383,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(445, 308);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 22);
@@ -390,7 +394,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(304, 351);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 22);
@@ -401,18 +405,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(304, 308);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 22);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Strenght";
+            this.label5.Text = "Strength";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(445, 352);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 22);
@@ -423,7 +427,7 @@
             // 
             this.characterstrength.AutoSize = true;
             this.characterstrength.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterstrength.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characterstrength.ForeColor = System.Drawing.Color.White;
             this.characterstrength.Location = new System.Drawing.Point(418, 311);
             this.characterstrength.Name = "characterstrength";
             this.characterstrength.Size = new System.Drawing.Size(21, 22);
@@ -434,7 +438,7 @@
             // 
             this.characterhealth.AutoSize = true;
             this.characterhealth.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterhealth.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characterhealth.ForeColor = System.Drawing.Color.White;
             this.characterhealth.Location = new System.Drawing.Point(557, 351);
             this.characterhealth.Name = "characterhealth";
             this.characterhealth.Size = new System.Drawing.Size(32, 22);
@@ -445,7 +449,7 @@
             // 
             this.characterperception.AutoSize = true;
             this.characterperception.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterperception.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characterperception.ForeColor = System.Drawing.Color.White;
             this.characterperception.Location = new System.Drawing.Point(557, 330);
             this.characterperception.Name = "characterperception";
             this.characterperception.Size = new System.Drawing.Size(21, 22);
@@ -456,7 +460,7 @@
             // 
             this.characterstealth.AutoSize = true;
             this.characterstealth.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterstealth.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characterstealth.ForeColor = System.Drawing.Color.White;
             this.characterstealth.Location = new System.Drawing.Point(557, 308);
             this.characterstealth.Name = "characterstealth";
             this.characterstealth.Size = new System.Drawing.Size(21, 22);
@@ -467,7 +471,7 @@
             // 
             this.characterintelligence.AutoSize = true;
             this.characterintelligence.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterintelligence.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characterintelligence.ForeColor = System.Drawing.Color.White;
             this.characterintelligence.Location = new System.Drawing.Point(418, 355);
             this.characterintelligence.Name = "characterintelligence";
             this.characterintelligence.Size = new System.Drawing.Size(21, 22);
@@ -478,7 +482,7 @@
             // 
             this.characteragility.AutoSize = true;
             this.characteragility.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characteragility.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.characteragility.ForeColor = System.Drawing.Color.White;
             this.characteragility.Location = new System.Drawing.Point(418, 333);
             this.characteragility.Name = "characteragility";
             this.characteragility.Size = new System.Drawing.Size(21, 22);
@@ -487,7 +491,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 30);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(122, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 46;
@@ -497,7 +503,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(869, 530);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.characteragility);
@@ -536,7 +542,6 @@
             this.Controls.Add(this.Str);
             this.Controls.Add(this.pb);
             this.Name = "Character";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

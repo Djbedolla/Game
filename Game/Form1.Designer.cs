@@ -37,29 +37,33 @@
             // 
             this.lblstart.AutoSize = true;
             this.lblstart.Font = new System.Drawing.Font("Unispace", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstart.Location = new System.Drawing.Point(349, 237);
+            this.lblstart.ForeColor = System.Drawing.Color.White;
+            this.lblstart.Location = new System.Drawing.Point(334, 212);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(70, 23);
             this.lblstart.TabIndex = 0;
             this.lblstart.Text = "Start";
             this.lblstart.Click += new System.EventHandler(this.lblstart_Click);
+            this.lblstart.MouseLeave += new System.EventHandler(this.lblstart_MouseLeave);
+            this.lblstart.MouseHover += new System.EventHandler(this.lblstart_MouseHover);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(266, 55);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(262, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 87);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tower";
-           
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(330, 142);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(313, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 47);
             this.label2.TabIndex = 2;
@@ -69,6 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

@@ -19,12 +19,23 @@ namespace Game
 
         private void lblstart_Click(object sender, EventArgs e)
         {
-            Character n = new Character();
+            Room1 n = new Room1(5,3,5,5,5,3,"penis","ninja");
             n.Show();
             Hide();
         }
-        
 
-        
+        private void lblstart_MouseHover(object sender, EventArgs e)
+        {
+            lblstart.ForeColor = System.Drawing.Color.DarkRed;
+            label1.ForeColor = System.Drawing.Color.DarkRed;
+            label2.ForeColor = System.Drawing.Color.DarkRed;
+        }
+
+        private void lblstart_MouseLeave(object sender, EventArgs e)
+        {
+            lblstart.ForeColor = System.Drawing.Color.White;
+            label1.ForeColor = System.Drawing.Color.White;
+            label2.ForeColor = System.Drawing.Color.White;
+        }
     }
 }

@@ -27,20 +27,7 @@ namespace Game
         int th, s, a, p, i;
         int str, st, intel, ag, per;
 
-        private void Create_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Length > 0&&Class.Text.Length>0&&Str.Text.Length>0&&St.Text.Length>0&&Int.Text.Length>0&&Ag.Text.Length>0&&Per.Text.Length>0)
-            {
-                Room1 n = new Room1();
-                n.Show();
-                Hide();
-            }
-            else
-            {
-                MessageBox.Show("Please finish slecting a Name, Class, and Stats to continue.");
-            }
-        }
-
+        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Char.name = textBox1.Text;
@@ -51,6 +38,29 @@ namespace Game
         
 
         CharStat Char = new CharStat();
+        private void Create_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0 && Class.Text.Length > 0 && Str.Text.Length > 0 && St.Text.Length > 0 && Int.Text.Length > 0 && Ag.Text.Length > 0 && Per.Text.Length > 0)
+            {
+                if (th!=s&&th!=a&&th!=p&&th!=i&&s!=th&&s!=a&&s!=p&&s!=i&&a!=th&&a!=s&&a!=p&&a!=i&&p!=th&&p!=a&&p!=s&&p!=i)
+                {
+                    Room1 n = new Room1(Char.Health,Char.Agility,Char.Strength,Char.Stealth,Char.Perception,Char.Intelligence,textBox1.Text,Class.Text);
+                    n.Show();
+                    Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("Two stats cannot be the same.");
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Please finish slecting a Name, Class, and Stats to continue.");
+            }
+        }
+
         private void Per_SelectedIndexChanged(object sender, EventArgs e)
         {
             p = Convert.ToInt32(Per.Text);
@@ -67,10 +77,7 @@ namespace Game
             i = Convert.ToInt32(Int.Text);
             Char.Intelligence = i + intel;
             characterintelligence.Text = Convert.ToString(Char.Intelligence);
-            Ag.Items.Remove(Int.Text);
-            St.Items.Remove(Int.Text);
-            Str.Items.Remove(Int.Text);
-            Per.Items.Remove(Int.Text);
+            
 
         }
         private void Ag_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,10 +85,7 @@ namespace Game
             a = Convert.ToInt32(Ag.Text);
             Char.Agility = a+ag;
             characteragility.Text = Convert.ToString(Char.Agility);
-            Int.Items.Remove(Ag.Text);
-            St.Items.Remove(Ag.Text);
-            Str.Items.Remove(Ag.Text);
-            Per.Items.Remove(Ag.Text);
+            
 
         }
         private void St_SelectedIndexChanged(object sender, EventArgs e)
@@ -89,10 +93,7 @@ namespace Game
             s = Convert.ToInt32(St.Text);
             Char.Stealth = s + st;
             characterstealth.Text = Convert.ToString(Char.Stealth);
-            Int.Items.Remove(St.Text);
-            Ag.Items.Remove(St.Text);
-            Str.Items.Remove(St.Text);
-            Per.Items.Remove(St.Text);
+            
 
         }
         private void Str_SelectedIndexChanged(object sender, EventArgs e)
@@ -101,10 +102,7 @@ namespace Game
             th = Convert.ToInt32(Str.Text);            
             Char.Strength = th + str ;
             characterstrength.Text = Convert.ToString(Char.Strength);
-            Int.Items.Remove(Str.Text);
-            Ag.Items.Remove(Str.Text);
-            St.Items.Remove(Str.Text);
-            Per.Items.Remove(Str.Text);
+           
         }   
         private void Class_SelectedIndexChanged(object sender, EventArgs e)
         {
