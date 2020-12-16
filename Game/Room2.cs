@@ -91,9 +91,11 @@ namespace Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(button2.Text=="Continue To Next Room.")
+            if(button2.Text=="Continue To Next Room")
             {
                 bathhouse xd = new bathhouse(hel, agil, stel, strength, per, intel, CName.Text, Class.Text);
+                xd.Show();
+                Hide();
             }
         }
     }

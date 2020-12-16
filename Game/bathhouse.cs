@@ -79,13 +79,13 @@ namespace Game
                 hel = hel + 5;
                 Health.Text = "" + hel;
                 button1.Text = "";
-                button2.Text = "Get Out Of Bath And Continue To Next Room";
+                button2.Text = "Get Out And Continue To Next Room";
             }
         }    
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button2.Text == "Get Out Of Bath And Continue To Next Room")
+            if (button2.Text == "Get Out And Continue To Next Room")
             {
 
             }

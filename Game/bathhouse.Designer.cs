@@ -59,9 +59,9 @@
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.Location = new System.Drawing.Point(488, 394);
+            this.button3.Location = new System.Drawing.Point(488, 384);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 44);
+            this.button3.Size = new System.Drawing.Size(103, 62);
             this.button3.TabIndex = 67;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -70,9 +70,9 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.Location = new System.Drawing.Point(368, 394);
+            this.button2.Location = new System.Drawing.Point(368, 384);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 44);
+            this.button2.Size = new System.Drawing.Size(103, 62);
             this.button2.TabIndex = 66;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -100,9 +100,9 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.Location = new System.Drawing.Point(247, 394);
+            this.button1.Location = new System.Drawing.Point(246, 384);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 44);
+            this.button1.Size = new System.Drawing.Size(103, 62);
             this.button1.TabIndex = 63;
             this.button1.Text = "Search Room";
             this.button1.UseVisualStyleBackColor = false;
