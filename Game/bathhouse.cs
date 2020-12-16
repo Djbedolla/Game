@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,9 +65,30 @@ namespace Game
                 Cel.Image = Properties.Resources.monk;
                 Cel.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            des.Text = "You Enter a Dark Room That appears to be empty. The wooden floor and\n walls are old and rough. ";
-            Roompic.Image = Properties.Resources.BathhouseUpperFloorRooms;
+            des.Text = "After you defeat the guards you continue up another flight of stairs.\nAs you make it to the next floor you are greeted by a soaking tub.";
+            Roompic.Image = Properties.Resources.bathhouse;
             Roompic.SizeMode = PictureBoxSizeMode.StretchImage;
+            button1.Text = "Get In Tub";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (button1.Text == "Get In Tub")
+            {
+                des.Text = "As you get in the tub you can feel your strength come back to you.\nYou gain 5 health.";
+                hel = hel + 5;
+                Health.Text = "" + hel;
+                button1.Text = "";
+                button2.Text = "Get Out Of Bath And Continue To Next Room";
+            }
+        }    
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "Get Out Of Bath And Continue To Next Room")
+            {
+
+            }
         }
     }
 }

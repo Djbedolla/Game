@@ -63,9 +63,19 @@ namespace Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BathhouseUpperFloorRooms {
+        internal static System.Drawing.Bitmap bathhouse {
             get {
-                object obj = ResourceManager.GetObject("BathhouseUpperFloorRooms", resourceCulture);
+                object obj = ResourceManager.GetObject("bathhouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardroom {
+            get {
+                object obj = ResourceManager.GetObject("guardroom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
