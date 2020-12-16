@@ -78,8 +78,7 @@ namespace Game
 
 
         }
-        bool door=false;
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
            if(button1.Text=="Search Room")
@@ -88,7 +87,7 @@ namespace Game
               button2.Text = "Investigate hole";
               
             }
-           else if (button1.Text == "Dodge")
+           if (button1.Text == "Dodge")
            {
                 if (agil >= 4)
                 {
@@ -107,8 +106,47 @@ namespace Game
 
                 }
             }
-            
-            
+            if (button1.Text == "Pick Lock")
+            {
+                if (intel >= 5)
+                {
+                    des.Text = "You have succesfully picked the lock and the door gently creeks open";
+                    button3.Text = "Go To Next Room";
+
+                }
+                else
+                {
+                    des.Text = "While you are picking the lock you start hearing a clicking sound. You\n countinue picking the lock and out of the corner of your eye you see a trap\n door open and out comes a flying arrow";
+                    button1.Text = "Dodge";
+                    button2.Text = "";
+                }
+
+            }
+
+            if (button1.Text == "Break Down Door")
+            {
+                if (strength >= 5)
+                {
+                    
+                    des.Text = "You manage to break down the door with ease.";
+                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text);
+                    button3.Text = "Go To Next Room";
+
+                }
+                else
+                {
+                    
+                    des.Text = "You barely manage to break down the door and you take one damage.";
+                    hel = hel - 1;
+                    Health.Text = Convert.ToString(hel);
+                    Convert.ToInt32(hel);
+                    button3.Text = "Go To Next Room";
+
+
+
+                }
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -119,7 +157,7 @@ namespace Game
                 if (intel >= 4 && per >= 2)
                 {
                     des.Text = "The hole seems to be some type of lock";
-                    button2.Text=("Pick Lock");
+                    button1.Text=("Pick Lock");
                 }
                 else
                 {
@@ -132,46 +170,37 @@ namespace Game
             {
                 if (strength >= 5)
                 {
-                    door = true;
+                    
                     des.Text = "You manage to break down the door with ease.";
-                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text, door);
-                    xd.Show();
-                    Hide();
+                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text);
+                    button3.Text = "Go To Next Room";
 
                 }
                 else
                 {
-                    door = true;
+                   
                     des.Text = "You barely manage to break down the door and you take one damage.";
                     hel = hel - 1;
                     Health.Text = Convert.ToString(hel);
                     Convert.ToInt32(hel);
-
+                    button3.Text = "Go To Next Room";
 
 
 
                 }
             }
 
-            else if (button2.Text=="Pick Lock")
-            {
-                if (intel >= 5)
-                {
-                    des.Text = "You have succesfully picke the lock and the door gently creeks open";
-                    Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text, door);
-                    xd.Show();
-                    Hide();
-                }
-                else
-                {
-                    des.Text = "While you are picking the lock you start hearing a clicking sound. You\n countinue picking the lock and out of the corner of your eye you see a trap\n door open and out comes a flying arrow";
-                    button1.Text = "Dodge";
-                    button2.Text = "";
-                }
-
-            }
+            
         }
 
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(button3.Text=="Go To Next Room")
+            {
+                Room2 xd = new Room2(hel, agil, stel, strength, per, intel, CName.Text, Class.Text);
+                xd.Show();
+                Hide();
+            }
+        }
     }
 }

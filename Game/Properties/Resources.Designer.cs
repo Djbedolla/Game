@@ -63,6 +63,16 @@ namespace Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BathhouseUpperFloorRooms {
+            get {
+                object obj = ResourceManager.GetObject("BathhouseUpperFloorRooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap monk {
             get {
                 object obj = ResourceManager.GetObject("monk", resourceCulture);

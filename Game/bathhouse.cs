@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Game
 {
-    public partial class Room2 : Form
+    public partial class bathhouse : Form
     {
         public int intel;
         public int hel;
@@ -18,7 +18,7 @@ namespace Game
         public int strength;
         public int agil;
         public int stel;
-        public Room2(int h, int a, int st, int str, int p, int i, string n, string c)
+        public bathhouse(int h, int a, int st, int str, int p, int i, string n, string c)
         {
             InitializeComponent();
             intel = i;

@@ -296,6 +296,7 @@
             this.button3.Size = new System.Drawing.Size(103, 44);
             this.button3.TabIndex = 23;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Roompic
             // 
@@ -343,7 +344,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Room1";
             this.Text = "Room1";
-          
             ((System.ComponentModel.ISupportInitialize)(this.Roompic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cel)).EndInit();
             this.ResumeLayout(false);
