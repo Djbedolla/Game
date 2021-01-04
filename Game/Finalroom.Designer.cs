@@ -1,7 +1,6 @@
-﻿
-namespace Game
+﻿namespace Game
 {
-    partial class Room2
+    partial class Finalroom
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +50,7 @@ namespace Game
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Roompic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cel)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +62,7 @@ namespace Game
             this.button3.Location = new System.Drawing.Point(488, 394);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 44);
-            this.button3.TabIndex = 45;
+            this.button3.TabIndex = 67;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -73,7 +73,7 @@ namespace Game
             this.button2.Location = new System.Drawing.Point(368, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 44);
-            this.button2.TabIndex = 44;
+            this.button2.TabIndex = 66;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -85,14 +85,14 @@ namespace Game
             this.des.Location = new System.Drawing.Point(233, 291);
             this.des.Name = "des";
             this.des.Size = new System.Drawing.Size(0, 19);
-            this.des.TabIndex = 43;
+            this.des.TabIndex = 65;
             // 
             // Roompic
             // 
             this.Roompic.Location = new System.Drawing.Point(237, 12);
             this.Roompic.Name = "Roompic";
             this.Roompic.Size = new System.Drawing.Size(551, 276);
-            this.Roompic.TabIndex = 42;
+            this.Roompic.TabIndex = 64;
             this.Roompic.TabStop = false;
             // 
             // button1
@@ -102,7 +102,7 @@ namespace Game
             this.button1.Location = new System.Drawing.Point(247, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 44);
-            this.button1.TabIndex = 41;
+            this.button1.TabIndex = 63;
             this.button1.Text = "Search Room";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -112,7 +112,7 @@ namespace Game
             this.Cel.Location = new System.Drawing.Point(12, 12);
             this.Cel.Name = "Cel";
             this.Cel.Size = new System.Drawing.Size(131, 164);
-            this.Cel.TabIndex = 40;
+            this.Cel.TabIndex = 62;
             this.Cel.TabStop = false;
             // 
             // Class
@@ -125,7 +125,7 @@ namespace Game
             this.Class.Location = new System.Drawing.Point(78, 201);
             this.Class.Name = "Class";
             this.Class.Size = new System.Drawing.Size(21, 22);
-            this.Class.TabIndex = 39;
+            this.Class.TabIndex = 61;
             this.Class.Text = "0";
             // 
             // CName
@@ -138,7 +138,7 @@ namespace Game
             this.CName.Location = new System.Drawing.Point(78, 179);
             this.CName.Name = "CName";
             this.CName.Size = new System.Drawing.Size(21, 22);
-            this.CName.TabIndex = 38;
+            this.CName.TabIndex = 60;
             this.CName.Text = "0";
             // 
             // Perception
@@ -151,7 +151,7 @@ namespace Game
             this.Perception.Location = new System.Drawing.Point(132, 332);
             this.Perception.Name = "Perception";
             this.Perception.Size = new System.Drawing.Size(21, 22);
-            this.Perception.TabIndex = 37;
+            this.Perception.TabIndex = 59;
             this.Perception.Text = "0";
             // 
             // Stealth
@@ -164,7 +164,7 @@ namespace Game
             this.Stealth.Location = new System.Drawing.Point(132, 310);
             this.Stealth.Name = "Stealth";
             this.Stealth.Size = new System.Drawing.Size(21, 22);
-            this.Stealth.TabIndex = 36;
+            this.Stealth.TabIndex = 58;
             this.Stealth.Text = "0";
             // 
             // Int
@@ -177,7 +177,7 @@ namespace Game
             this.Int.Location = new System.Drawing.Point(131, 288);
             this.Int.Name = "Int";
             this.Int.Size = new System.Drawing.Size(21, 22);
-            this.Int.TabIndex = 35;
+            this.Int.TabIndex = 57;
             this.Int.Text = "0";
             // 
             // Agility
@@ -190,7 +190,7 @@ namespace Game
             this.Agility.Location = new System.Drawing.Point(132, 266);
             this.Agility.Name = "Agility";
             this.Agility.Size = new System.Drawing.Size(21, 22);
-            this.Agility.TabIndex = 34;
+            this.Agility.TabIndex = 56;
             this.Agility.Text = "0";
             // 
             // Strength
@@ -203,7 +203,7 @@ namespace Game
             this.Strength.Location = new System.Drawing.Point(132, 244);
             this.Strength.Name = "Strength";
             this.Strength.Size = new System.Drawing.Size(21, 22);
-            this.Strength.TabIndex = 33;
+            this.Strength.TabIndex = 55;
             this.Strength.Text = "0";
             // 
             // Health
@@ -216,7 +216,7 @@ namespace Game
             this.Health.Location = new System.Drawing.Point(132, 354);
             this.Health.Name = "Health";
             this.Health.Size = new System.Drawing.Size(21, 22);
-            this.Health.TabIndex = 32;
+            this.Health.TabIndex = 54;
             this.Health.Text = "0";
             // 
             // label8
@@ -228,7 +228,7 @@ namespace Game
             this.label8.Location = new System.Drawing.Point(12, 332);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 22);
-            this.label8.TabIndex = 31;
+            this.label8.TabIndex = 53;
             this.label8.Text = "Perception";
             // 
             // label7
@@ -240,7 +240,7 @@ namespace Game
             this.label7.Location = new System.Drawing.Point(12, 354);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 22);
-            this.label7.TabIndex = 30;
+            this.label7.TabIndex = 52;
             this.label7.Text = "Health";
             // 
             // label6
@@ -252,7 +252,7 @@ namespace Game
             this.label6.Location = new System.Drawing.Point(12, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 22);
-            this.label6.TabIndex = 29;
+            this.label6.TabIndex = 51;
             this.label6.Text = "Strength";
             // 
             // label5
@@ -264,7 +264,7 @@ namespace Game
             this.label5.Location = new System.Drawing.Point(12, 266);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 22);
-            this.label5.TabIndex = 28;
+            this.label5.TabIndex = 50;
             this.label5.Text = "Agility";
             // 
             // label4
@@ -276,7 +276,7 @@ namespace Game
             this.label4.Location = new System.Drawing.Point(12, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 22);
-            this.label4.TabIndex = 27;
+            this.label4.TabIndex = 49;
             this.label4.Text = "Class";
             // 
             // label3
@@ -288,7 +288,7 @@ namespace Game
             this.label3.Location = new System.Drawing.Point(12, 288);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 22);
-            this.label3.TabIndex = 26;
+            this.label3.TabIndex = 48;
             this.label3.Text = "Intelligence";
             // 
             // label2
@@ -300,7 +300,7 @@ namespace Game
             this.label2.Location = new System.Drawing.Point(12, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 22);
-            this.label2.TabIndex = 25;
+            this.label2.TabIndex = 47;
             this.label2.Text = "Stealth";
             // 
             // label1
@@ -312,15 +312,27 @@ namespace Game
             this.label1.Location = new System.Drawing.Point(12, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 22);
-            this.label1.TabIndex = 24;
+            this.label1.TabIndex = 46;
             this.label1.Text = "Name";
             // 
-            // Room2
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(607, 394);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(103, 44);
+            this.button4.TabIndex = 68;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // Finalroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.des);
@@ -343,8 +355,8 @@ namespace Game
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Room2";
-            this.Text = "Room2";
+            this.Name = "Finalroom";
+            this.Text = "Finalroom";
             ((System.ComponentModel.ISupportInitialize)(this.Roompic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cel)).EndInit();
             this.ResumeLayout(false);
@@ -376,5 +388,6 @@ namespace Game
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
     }
 }

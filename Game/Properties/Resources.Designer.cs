@@ -73,6 +73,26 @@ namespace Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garden {
+            get {
+                object obj = ResourceManager.GetObject("garden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gem {
+            get {
+                object obj = ResourceManager.GetObject("gem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap guardroom {
             get {
                 object obj = ResourceManager.GetObject("guardroom", resourceCulture);
@@ -96,6 +116,16 @@ namespace Game.Properties {
         internal static System.Drawing.Bitmap ninja {
             get {
                 object obj = ResourceManager.GetObject("ninja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oni {
+            get {
+                object obj = ResourceManager.GetObject("oni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

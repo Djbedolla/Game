@@ -19,7 +19,7 @@ namespace Game
 
         private void lblstart_Click(object sender, EventArgs e)
         {
-           Room2 n = new Room2(5,5,5,5,5,5,"xd","yes");
+            Character n = new Character();
             n.Show();
             Hide();
         }

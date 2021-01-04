@@ -59,11 +59,23 @@
       <DependentUpon>Character.cs</DependentUpon>
     </Compile>
     <Compile Include="CharStat.cs" />
+    <Compile Include="Finalroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finalroom.Designer.cs">
+      <DependentUpon>Finalroom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garden.Designer.cs">
+      <DependentUpon>Garden.cs</DependentUpon>
     </Compile>
     <Compile Include="Lose.cs">
       <SubType>Form</SubType>
@@ -85,14 +97,26 @@
     <Compile Include="Room2.Designer.cs">
       <DependentUpon>Room2.cs</DependentUpon>
     </Compile>
+    <Compile Include="win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win.Designer.cs">
+      <DependentUpon>win.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bathhouse.resx">
       <DependentUpon>bathhouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Character.resx">
       <DependentUpon>Character.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finalroom.resx">
+      <DependentUpon>Finalroom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Garden.resx">
+      <DependentUpon>Garden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lose.resx">
       <DependentUpon>Lose.cs</DependentUpon>
@@ -112,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Room2.resx">
       <DependentUpon>Room2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win.resx">
+      <DependentUpon>win.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +169,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bathhouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
